@@ -23,12 +23,14 @@
     {
       "Title": "交易日期",
       "DataType": "Date",
-      "OutputTitle": "交易时间"
+      "OutputTitle": "交易时间",
+      "Part": 0
     },
     {
       "Title": "交易时间",
       "DataType": "Time",
-      "OutputTitle": "交易时间"
+      "OutputTitle": "交易时间",
+      "Part": 1
     },
     {
       "Title": "借贷标识",
