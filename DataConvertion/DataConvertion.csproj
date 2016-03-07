@@ -34,6 +34,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -42,10 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="OutputFormat\OutputChinaUnionPayTransactionsFormat.cs" />
-    <Compile Include="OutputFormat\OutputElectronicTransactionsFormat.cs" />
-    <Compile Include="OutputFormat\OutputOpenningAccountsFormat.cs" />
-    <Compile Include="OutputFormat\OutputTransactionsFormat.cs" />
+    <Compile Include="InputFile.cs" />
+    <Compile Include="OutputFile.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
