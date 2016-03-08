@@ -54,6 +54,7 @@
     <Folder Include="InputTemplets\OpenningAccounts\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="InputTemplets\Transactions\民生银行交易流水1.json" />
     <None Include="InputTemplets\Transactions\交通银行交易流水1.json" />
     <None Include="OutputTemplets\OutputChinaUnionPayTransactionsTemplet.json" />
     <None Include="OutputTemplets\OutputTransactionsTemplet.json" />
@@ -61,6 +62,7 @@
     <None Include="OutputTemplets\OutputElectronicTransactionsTemplet.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

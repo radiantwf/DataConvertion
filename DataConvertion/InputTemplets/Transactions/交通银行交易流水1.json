@@ -3,81 +3,94 @@
   "FileType": "xls",
   "TitleRowNum": 0,
   "DataStratRowNum": 1,
-  "DataIntervalRows": 0 ,
+  "RecordRows": 1,
+  "RecordIntervalRows": 0,
   "Columns": [
     {
+      "columns": 0,
       "Title": "户名",
       "DataType": "String",
       "OutputTitle": "我方中文名称"
     },
     {
+      "columns": 1,
       "Title": "卡号",
       "DataType": "String",
       "OutputTitle": "我行账号（卡号）"
     },
     {
+      "columns": 2,
       "Title": "交易账号",
-      "DataType": "String",
       "OutputTitle": null
     },
     {
+      "columns": 3,
       "Title": "交易日期",
       "DataType": "Date",
       "OutputTitle": "交易时间",
       "Part": 0
     },
     {
+      "columns": 4,
       "Title": "交易时间",
       "DataType": "Time",
       "OutputTitle": "交易时间",
       "Part": 1
     },
     {
+      "columns": 5,
       "Title": "借贷标识",
       "DataType": "String",
       "OutputTitle": "借贷标志"
     },
     {
+      "columns": 6,
       "Title": "币种",
       "DataType": "String",
       "OutputTitle": "币种"
     },
     {
+      "columns": 7,
       "Title": "交易金额",
       "DataType": "Number",
       "OutputTitle": "交易金额"
     },
     {
+      "columns": 8,
       "Title": "账户余额",
       "DataType": "Number",
       "OutputTitle": "余额"
     },
     {
+      "columns": 9,
       "Title": "交易网点",
-      "DataType": "String",
       "OutputTitle": null
     },
     {
+      "columns": 10,
       "Title": "业务摘要",
-      "DataType": "String",
       "OutputTitle": null
     },
     {
+      "columns": 11,
       "Title": "流水号",
       "DataType": "String",
       "OutputTitle": "流水号"
     },
     {
+      "columns": 12,
       "Title": "对方账号",
       "DataType": "String",
       "OutputTitle": "对方账号（卡号）"
     },
     {
+      "columns": 13,
       "Title": "对方户名",
       "DataType": "String",
       "OutputTitle": "对方中文名称"
     },
     {
+      "columns": 14,
       "Title": "对方行名",
       "DataType": "String",
       "OutputTitle": "对方银行名称"

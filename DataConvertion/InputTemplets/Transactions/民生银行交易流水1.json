@@ -1,0 +1,116 @@
+﻿{
+  "Bank": "民生银行",
+  "FileType": "tsv",
+  "TitleRowNum": 0,
+  "DataStratRowNum": 1,
+  "RecordRows": 1,
+  "RecordIntervalRows": 0,
+  "Columns": [
+    {
+      "Title": "流水号",
+      "DataType": "String",
+      "OutputTitle": "流水号"
+    },
+    {
+      "Title": "交易机构",
+      "DataType": "String",
+      "valid": false,
+      "OutputTitle": null
+    },
+    {
+      "Title": "交易日期",
+      "DataType": "Date",
+      "OutputTitle": null
+    },
+    {
+      "Title": "交易时间",
+      "DataType": "Datetime",
+      "OutputTitle": "交易时间"
+    },
+    {
+      "Title": "网银IP地址",
+      "DataType": "String",
+      "OutputTitle": "网银IP地址"
+    },
+    {
+      "Title": "代码描述",
+      "DataType": "String",
+      "OutputTitle": "代码描述"
+    },
+    {
+      "Title": "余额",
+      "DataType": "Number",
+      "OutputTitle": "余额"
+    },
+    {
+      "Title": "我行账户",
+      "DataType": "String",
+      "OutputTitle": "我行账号（卡号）"
+    },
+    {
+      "Title": "我行客户号",
+      "DataType": "String",
+      "OutputTitle": "所属发卡行机构代码"
+    },
+    {
+      "Title": "当事人中文名称",
+      "DataType": "String",
+      "OutputTitle": "我方中文名称"
+    },
+    {
+      "Title": "原交易代码",
+      "DataType": "String",
+      "OutputTitle": "交易代码（交易渠道）"
+    },
+    {
+      "Title": "借贷标志",
+      "DataType": "String",
+      "OutputTitle": "借贷标志"
+    },
+    {
+      "Title": "收付标志",
+      "DataType": "String",
+      "OutputTitle": null
+    },
+    {
+      "Title": "科目号",
+      "DataType": "String",
+      "OutputTitle": null
+    },
+    {
+      "Title": "币种",
+      "DataType": "String",
+      "OutputTitle": "币种"
+    },
+    {
+      "Title": "原币交易金额",
+      "DataType": "Number",
+      "OutputTitle": "交易金额"
+    },
+    {
+      "Title": "用途",
+      "DataType": "String",
+      "OutputTitle": "用途（摘要）"
+    },
+    {
+      "Title": "对方银行名称",
+      "DataType": "String",
+      "OutputTitle": "对方银行名称"
+    },
+    {
+      "Title": "对方客户号",
+      "DataType": "String",
+      "OutputTitle": "对方银行机构代码"
+    },
+    {
+      "Title": "对方账号",
+      "DataType": "String",
+      "OutputTitle": "对方账号（卡号）"
+    },
+    {
+      "Title": "对方名称",
+      "DataType": "String",
+      "OutputTitle": "对方中文名称"
+    }
+  ]
+}
