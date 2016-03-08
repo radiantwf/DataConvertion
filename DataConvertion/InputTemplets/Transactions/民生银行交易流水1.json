@@ -1,6 +1,7 @@
 ﻿{
   "Bank": "民生银行",
-  "FileType": "tsv",
+  "FileType": "txt",
+  "SeparatedValues": "  ",  //Tab
   "TitleRowNum": 0,
   "DataStratRowNum": 1,
   "RecordRows": 1,

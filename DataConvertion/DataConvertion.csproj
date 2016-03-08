@@ -54,12 +54,13 @@
     <Folder Include="InputTemplets\OpenningAccounts\" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="InputTemplets\Transactions\农业银行交易流水_无.json" />
     <None Include="InputTemplets\Transactions\民生银行交易流水1.json" />
     <None Include="InputTemplets\Transactions\交通银行交易流水1.json" />
-    <None Include="OutputTemplets\OutputChinaUnionPayTransactionsTemplet.json" />
-    <None Include="OutputTemplets\OutputTransactionsTemplet.json" />
-    <None Include="OutputTemplets\OutputOpenningAccountsTemplet.json" />
-    <None Include="OutputTemplets\OutputElectronicTransactionsTemplet.json" />
+    <None Include="OutputTemplets\OutputChinaUnionPayTransactionsTemplate.json" />
+    <None Include="OutputTemplets\OutputTransactionsTemplate.json" />
+    <None Include="OutputTemplets\OutputOpenningAccountsTemplate.json" />
+    <None Include="OutputTemplets\OutputElectronicTransactionsTemplate.json" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <ProjectExtensions />

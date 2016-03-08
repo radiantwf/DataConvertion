@@ -7,7 +7,7 @@ using System.Runtime.Serialization.Json;
 
 namespace DataConvertion {
     public class InputFile {
-        private static void getTemplets() {
+        private static void getTemplates() {
 
         }
     }
