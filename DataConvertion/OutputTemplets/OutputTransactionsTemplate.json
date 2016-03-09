@@ -23,7 +23,7 @@
     {
       "Title": "交易时间",
       "DataType": "Datetime",
-      "DataFormat": "yyyy-MM-dd HH:mm:ss"
+      "Format": "yyyy-MM-dd HH:mm:ss"
     },
     {
       "Title": "对方账号（卡号）",
@@ -52,7 +52,7 @@
     {
       "Title": "交易金额",
       "DataType": "Number",
-      "DataFormat": ".2F"
+      "Format": ".2F"
     },
     {
       "Title": "币种",
@@ -61,7 +61,7 @@
     {
       "Title": "余额",
       "DataType": "Number",
-      "DataFormat": ".2F"
+      "Format": ".2F"
     },
     {
       "Title": "网银IP地址",

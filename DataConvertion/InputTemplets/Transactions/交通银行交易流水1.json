@@ -1,6 +1,7 @@
 ﻿{
   "Bank": "交通银行",
   "FileType": "xls",
+  "BusinessType": "Transactions",
   "TitleRowNum": 0,
   "DataStratRowNum": 1,
   "RecordRows": 1,

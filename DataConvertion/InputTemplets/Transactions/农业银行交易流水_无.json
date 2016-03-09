@@ -1,4 +1,5 @@
 ﻿{
-  "FileType": "dat",
+  "FileType": "txt",
+  "BusinessType": "Transactions",
   "CurstomTemplate": true
 }

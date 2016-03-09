@@ -2,6 +2,7 @@
   "Bank": "民生银行",
   "FileType": "txt",
   "SeparatedValues": "  ",  //Tab
+  "BusinessType": "Transactions",
   "TitleRowNum": 0,
   "DataStratRowNum": 1,
   "RecordRows": 1,

@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataType.cs" />
     <Compile Include="InputFile.cs" />
     <Compile Include="OutputFile.cs" />
     <Compile Include="Program.cs" />
