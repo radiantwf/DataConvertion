@@ -1,61 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.IO;
 
 namespace DataConvertion.DataType {
-    /// <summary>
-    /// 业务类型
-    /// </summary>
-    public enum BusinessTypeType {
-        /// <summary>
-        /// 未知
-        /// </summary>
-        Unknown,
-        /// <summary>
-        /// 交易记录
-        /// </summary>
-        Transactions,
-        /// <summary>
-        /// 开户信息
-        /// </summary>
-        OpenningAccounts,
-        /// <summary>
-        /// 电子交易记录
-        /// </summary>
-        ElectronicTransactions,
-        /// <summary>
-        /// 银联交易记录
-        /// </summary>
-        ChinaUnionPayTransactions,
-    };
-
-    /// <summary>
-    /// 文件类型
-    /// </summary>
-    public enum FileTypeType {
-        /// <summary>
-        /// 未知
-        /// </summary>
-        Unknown,
-        /// <summary>
-        /// Excel文件
-        /// </summary>
-        Xls,
-        /// <summary>
-        /// 文本文件
-        /// </summary>
-        Txt,
-    };
 
     /// <summary>
     /// 输入文件模板列定义
     /// </summary>
-    public class InputFileTemplateColumns {
+    public class OutputFileTemplateColumn {
         /// <summary>
         /// 列号
         /// </summary>
@@ -72,24 +26,12 @@ namespace DataConvertion.DataType {
         /// 数据格式
         /// </summary>
         public string DataFormat { get; set; }
-        /// <summary>
-        /// 输出文件的列标题
-        /// </summary>
-        public string OutputColumnHeader { get; set; }
-        /// <summary>
-        /// 多列数据输出到一列时的顺序号
-        /// </summary>
-        public int Part { get; set; }
-        /// <summary>
-        /// 转换规则
-        /// </summary>
-        public string ConvertRules { get; set; }
     }
 
     /// <summary>
     /// 输入文件模板
     /// </summary>
-    public class InputFileTemplate {
+    public class OutputFileTemplate {
         /// <summary>
         /// 业务类型
         /// </summary>
@@ -98,10 +40,6 @@ namespace DataConvertion.DataType {
         /// 文件类型
         /// </summary>
         public FileTypeType FileType { private set; get; }
-        /// <summary>
-        /// 所属银行
-        /// </summary>
-        public string Bank { private set; get; }
         /// <summary>
         /// 分隔符（列）
         /// </summary>
@@ -125,21 +63,17 @@ namespace DataConvertion.DataType {
         /// <summary>
         /// 列信息
         /// </summary>
-        public List<InputFileTemplateColumns> Columns { private set; get; }
+        public List<OutputFileTemplateColumn> Columns { private set; get; }
         /// <summary>
         /// Json字符串
         /// </summary>
         public string JsonString { private set; get; }
 
-        public InputFileTemplate() {
-
-        }
-
         /// <summary>
         /// 实例化模板对象
         /// </summary>
         /// <param name="templateFile"></param>
-        private InputFileTemplate(string templateFile) {
+        private OutputFileTemplate(string templateFile) {
             try {
                 this.JsonString = File.ReadAllText(templateFile);
                 AnalyzeJsonString();
@@ -154,11 +88,6 @@ namespace DataConvertion.DataType {
         /// </summary>
         private void AnalyzeJsonString() {
             JObject jo = JObject.Parse(JsonString);
-
-            // 所属银行
-            if (jo.Property("Bank") != null) {
-                this.Bank = jo.Property("Bank").Value.ToString();
-            }
 
             // 业务类型
             if (jo.Property("BusinessType") != null) {
@@ -232,17 +161,14 @@ namespace DataConvertion.DataType {
             this.RecordsIntervalRows = recordsIntervalRows;
 
             // 列
-            Columns = new List<InputFileTemplateColumns>();
+            Columns = new List<OutputFileTemplateColumn>();
             if (jo.Property("Columns") != null) {
                 jo.Property("Columns").Value.ToList().ForEach(row => {
-                    InputFileTemplateColumns column = new InputFileTemplateColumns();
+                    OutputFileTemplateColumn column = new OutputFileTemplateColumn();
                     column.Column = row.Value<int>("Column");
                     column.ColumnHeader = row.Value<string>("ColumnHeader");
                     column.DataType = row.Value<string>("DataType");
                     column.DataFormat = row.Value<string>("DataFormat");
-                    column.OutputColumnHeader = row.Value<string>("OutputColumnHeader");
-                    column.Part = row.Value<int>("Part");
-                    column.ConvertRules = row.Value<string>("ConvertRules");
                     Columns.Add(column);
                 });
             }
@@ -252,23 +178,23 @@ namespace DataConvertion.DataType {
         /// <summary>
         /// 模板列表
         /// </summary>
-        public static List<InputFileTemplate> InputFileTemplateList {
+        public static List<OutputFileTemplate> OutputFileTemplateList {
             private set; get;
         }
 
-        static InputFileTemplate() {
+        static OutputFileTemplate() {
             // 初始化模板列表
-            InputFileTemplateList = new List<InputFileTemplate>();
+            OutputFileTemplateList = new List<OutputFileTemplate>();
 
             // 获取模板文件
             string baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-            string inputTemplatesDirectory = Path.Combine(baseDirectory, "InputTemplets");
-            string[] templates = Directory.GetFiles(inputTemplatesDirectory, "*.json", SearchOption.AllDirectories);
+            string outputTemplatesDirectory = Path.Combine(baseDirectory, "OutputTemplets");
+            string[] templates = Directory.GetFiles(outputTemplatesDirectory, "*.json", SearchOption.AllDirectories);
 
             foreach (string templateFile in templates) {
-                InputFileTemplate template = new InputFileTemplate(templateFile);
+                OutputFileTemplate template = new OutputFileTemplate(templateFile);
                 if (template != null) {
-                    InputFileTemplateList.Add(template);
+                    OutputFileTemplateList.Add(template);
                 }
             }
         }

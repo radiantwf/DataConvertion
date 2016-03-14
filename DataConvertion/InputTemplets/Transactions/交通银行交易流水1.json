@@ -36,7 +36,8 @@
       "ColumnHeader": "交易时间",
       "DataType": "Time",
       "OutputColumnHeader": "交易时间",
-      "Part": 1
+      "Part": 1,
+      "PartSeparatedValues": " "
     },
     {
       "Column": 5,

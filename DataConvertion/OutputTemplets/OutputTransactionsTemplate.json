@@ -1,8 +1,11 @@
 ﻿{
-  "FileType": "csv",
+  "BusinessType": "Transactions",
+  "FileType": "txt",
+  "SeparatedValues": ",",
   "TitleRowNum": 0,
   "DataStratRowNum": 1,
-  "DataIntervalRows": 0,
+  "PerRecordRows": 1,
+  "RecordsIntervalRows": 0,
   "Columns": [
     {
       "ColumnHeader": "我行账号（卡号）",
@@ -23,7 +26,7 @@
     {
       "ColumnHeader": "交易时间",
       "DataType": "Datetime",
-      "Format": "yyyy-MM-dd HH:mm:ss"
+      "DataFormat": "yyyy-MM-dd HH:mm:ss"
     },
     {
       "ColumnHeader": "对方账号（卡号）",

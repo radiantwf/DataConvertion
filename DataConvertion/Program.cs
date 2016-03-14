@@ -8,7 +8,8 @@ using System.Threading.Tasks;
 namespace DataConvertion {
     class Program {
         static void Main(string[] args) {
-            InputFileTemplate tmp = new InputFileTemplate();
+            //InputFileTemplate tmp = new InputFileTemplate();
+            log4net.
         }
     }
 }
