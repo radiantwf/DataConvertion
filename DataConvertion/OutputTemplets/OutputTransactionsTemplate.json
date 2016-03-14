@@ -5,106 +5,106 @@
   "DataIntervalRows": 0,
   "Columns": [
     {
-      "Title": "我行账号（卡号）",
+      "ColumnHeader": "我行账号（卡号）",
       "DataType": "String"
     },
     {
-      "Title": "所属发卡行机构代码",
+      "ColumnHeader": "所属发卡行机构代码",
       "DataType": "String"
     },
     {
-      "Title": "我方银行名称",
+      "ColumnHeader": "我方银行名称",
       "DataType": "String"
     },
     {
-      "Title": "我方中文名称",
+      "ColumnHeader": "我方中文名称",
       "DataType": "String"
     },
     {
-      "Title": "交易时间",
+      "ColumnHeader": "交易时间",
       "DataType": "Datetime",
       "Format": "yyyy-MM-dd HH:mm:ss"
     },
     {
-      "Title": "对方账号（卡号）",
+      "ColumnHeader": "对方账号（卡号）",
       "DataType": "String"
     },
     {
-      "Title": "对方中文名称",
+      "ColumnHeader": "对方中文名称",
       "DataType": "String"
     },
     {
-      "Title": "对方银行名称",
+      "ColumnHeader": "对方银行名称",
       "DataType": "String"
     },
     {
-      "Title": "对方银行机构代码",
+      "ColumnHeader": "对方银行机构代码",
       "DataType": "String"
     },
     {
-      "Title": "流水号",
+      "ColumnHeader": "流水号",
       "DataType": "String"
     },
     {
-      "Title": "借贷标志",
+      "ColumnHeader": "借贷标志",
       "DataType": "String"
     },
     {
-      "Title": "交易金额",
+      "ColumnHeader": "交易金额",
       "DataType": "Number",
       "Format": ".2F"
     },
     {
-      "Title": "币种",
+      "ColumnHeader": "币种",
       "DataType": "String"
     },
     {
-      "Title": "余额",
+      "ColumnHeader": "余额",
       "DataType": "Number",
       "Format": ".2F"
     },
     {
-      "Title": "网银IP地址",
+      "ColumnHeader": "网银IP地址",
       "DataType": "String"
     },
     {
-      "Title": "交易代码（交易渠道）",
+      "ColumnHeader": "交易代码（交易渠道）",
       "DataType": "String"
     },
     {
-      "Title": "代码描述",
+      "ColumnHeader": "代码描述",
       "DataType": "String"
     },
     {
-      "Title": "用途（摘要）",
+      "ColumnHeader": "用途（摘要）",
       "DataType": "String"
     },
     {
-      "Title": "商户代码",
+      "ColumnHeader": "商户代码",
       "DataType": "String"
     },
     {
-      "Title": "商户名称",
+      "ColumnHeader": "商户名称",
       "DataType": "String"
     },
     {
-      "Title": "受理机构代码",
+      "ColumnHeader": "受理机构代码",
       "DataType": "String"
     },
     {
-      "Title": "受理机构名称",
+      "ColumnHeader": "受理机构名称",
       "DataType": "String"
     },
     {
-      "Title": "交易是否成功",
+      "ColumnHeader": "交易是否成功",
       "DataType": "String"
     },
     {
-      "Title": "终端号（传票号）",
+      "ColumnHeader": "终端号（传票号）",
       "DataType": "String"
     },
     {
-      "Title": "交易地点",
+      "ColumnHeader": "交易地点",
       "DataType": "String"
     }
   ]

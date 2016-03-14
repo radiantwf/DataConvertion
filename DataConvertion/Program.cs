@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DataConvertion.DataType;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,6 +8,7 @@ using System.Threading.Tasks;
 namespace DataConvertion {
     class Program {
         static void Main(string[] args) {
+            InputFileTemplate tmp = new InputFileTemplate();
         }
     }
 }

@@ -8,8 +8,8 @@ using System.Runtime.Serialization.Json;
 namespace DataConvertion.OutputFormat {
     public class OutputFormat {
 
-        private Dictionary<int, string> title;
-        private Dictionary<int, string> DateType;
+        //private Dictionary<int, string> title;
+        //private Dictionary<int, string> DateType;
 
 
         public DataType.BusinessTypeType businessType { set; get; }

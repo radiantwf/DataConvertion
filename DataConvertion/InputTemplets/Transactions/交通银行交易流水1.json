@@ -4,97 +4,97 @@
   "BusinessType": "Transactions",
   "TitleRowNum": 0,
   "DataStratRowNum": 1,
-  "RecordRows": 1,
-  "RecordIntervalRows": 0,
+  "PerRecordRows": 1,
+  "RecordsIntervalRows": 0,
   "Columns": [
     {
-      "columns": 0,
-      "Title": "户名",
+      "Column": 0,
+      "ColumnHeader": "户名",
       "DataType": "String",
-      "OutputTitle": "我方中文名称"
+      "OutputColumnHeader": "我方中文名称"
     },
     {
-      "columns": 1,
-      "Title": "卡号",
+      "Column": 1,
+      "ColumnHeader": "卡号",
       "DataType": "String",
-      "OutputTitle": "我行账号（卡号）"
+      "OutputColumnHeader": "我行账号（卡号）"
     },
     {
-      "columns": 2,
-      "Title": "交易账号",
-      "OutputTitle": null
+      "Column": 2,
+      "ColumnHeader": "交易账号",
+      "OutputColumnHeader": null
     },
     {
-      "columns": 3,
-      "Title": "交易日期",
+      "Column": 3,
+      "ColumnHeader": "交易日期",
       "DataType": "Date",
-      "OutputTitle": "交易时间",
+      "OutputColumnHeader": "交易时间",
       "Part": 0
     },
     {
-      "columns": 4,
-      "Title": "交易时间",
+      "Column": 4,
+      "ColumnHeader": "交易时间",
       "DataType": "Time",
-      "OutputTitle": "交易时间",
+      "OutputColumnHeader": "交易时间",
       "Part": 1
     },
     {
-      "columns": 5,
-      "Title": "借贷标识",
+      "Column": 5,
+      "ColumnHeader": "借贷标识",
       "DataType": "String",
-      "OutputTitle": "借贷标志"
+      "OutputColumnHeader": "借贷标志"
     },
     {
-      "columns": 6,
-      "Title": "币种",
+      "Column": 6,
+      "ColumnHeader": "币种",
       "DataType": "String",
-      "OutputTitle": "币种"
+      "OutputColumnHeader": "币种"
     },
     {
-      "columns": 7,
-      "Title": "交易金额",
+      "Column": 7,
+      "ColumnHeader": "交易金额",
       "DataType": "Number",
-      "OutputTitle": "交易金额"
+      "OutputColumnHeader": "交易金额"
     },
     {
-      "columns": 8,
-      "Title": "账户余额",
+      "Column": 8,
+      "ColumnHeader": "账户余额",
       "DataType": "Number",
-      "OutputTitle": "余额"
+      "OutputColumnHeader": "余额"
     },
     {
-      "columns": 9,
-      "Title": "交易网点",
-      "OutputTitle": null
+      "Column": 9,
+      "ColumnHeader": "交易网点",
+      "OutputColumnHeader": null
     },
     {
-      "columns": 10,
-      "Title": "业务摘要",
-      "OutputTitle": null
+      "Column": 10,
+      "ColumnHeader": "业务摘要",
+      "OutputColumnHeader": null
     },
     {
-      "columns": 11,
-      "Title": "流水号",
+      "Column": 11,
+      "ColumnHeader": "流水号",
       "DataType": "String",
-      "OutputTitle": "流水号"
+      "OutputColumnHeader": "流水号"
     },
     {
-      "columns": 12,
-      "Title": "对方账号",
+      "Column": 12,
+      "ColumnHeader": "对方账号",
       "DataType": "String",
-      "OutputTitle": "对方账号（卡号）"
+      "OutputColumnHeader": "对方账号（卡号）"
     },
     {
-      "columns": 13,
-      "Title": "对方户名",
+      "Column": 13,
+      "ColumnHeader": "对方户名",
       "DataType": "String",
-      "OutputTitle": "对方中文名称"
+      "OutputColumnHeader": "对方中文名称"
     },
     {
-      "columns": 14,
-      "Title": "对方行名",
+      "Column": 14,
+      "ColumnHeader": "对方行名",
       "DataType": "String",
-      "OutputTitle": "对方银行名称"
+      "OutputColumnHeader": "对方银行名称"
     }
   ]
 }
